@@ -188,7 +188,7 @@ const script: Firebot.CustomScript<Params> = {
     // Perform self-request check, if enabled =====================================================
     // ============================================================================================
 
-    const PRIORITIZE_SELF_REQUESTS = runRequest.parameters.priotitizeSelfRequests;
+    const PRIORITIZE_SELF_REQUESTS = runRequest.parameters.prioritizeSelfRequests;
 
     if (PRIORITIZE_SELF_REQUESTS) {
 

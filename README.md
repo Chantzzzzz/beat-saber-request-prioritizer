@@ -4,7 +4,7 @@ An extension to show the folks a little love by automatically bumping their requ
 
 Note that this is using a custom mapping to associate BeatSaver profiles to Twitch usernames, since these are often different. Some people may **unintentionally** be missing from this mapping because they're new, I don't know their Twitch username, or some other reason. If you'd like to be added, either message me on discord (same username) or feel free to open up an issue on this repository.
 
-# !!Safety Warning!!
+# !! Safety Warning !!
 
 This extension is going to ask you to enable custom scripts regardless of your bot of choice. **Always make sure you trust the author of custom scripts before you enable them, including me!** 
 

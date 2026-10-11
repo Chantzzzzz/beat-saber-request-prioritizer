@@ -1,7 +1,5 @@
 # Firebot Setup
 
-
-
 ## Enabling Custom scripts
 
 In Firebot, click the `Settings` tab on left navigation bar, and then click on the `Scripts` tab in the new panel. Make sure that `Custom Scripts` is toggled on.

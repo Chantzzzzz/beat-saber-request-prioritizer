@@ -19,13 +19,13 @@ const script: Firebot.CustomScript<Params> = {
     return {
       authorDictionaryJsonUrl: {
         type: "string",
-        default: "https://raw.githubusercontent.com/Chantzzzzz/self-request-prioritizer/refs/heads/main/AuthorData/authorAliasesMinified.json",
+        default: "https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/AuthorData/authorAliasesMinified.json",
         description: "URL to fetch the dictionary of Twitch usernames to Beat Saver profile names",
         title: "Author Lookup Dictionary URL"
       },
     };
   },
-  run: (runRequest:RunRequest<Params>) => {
+  run: (runRequest: RunRequest<Params>) => {
 
     const { logger, customVariableManager } = runRequest.modules;
 
@@ -34,15 +34,15 @@ const script: Firebot.CustomScript<Params> = {
     return new Promise<ScriptReturnObject>((resolve) => {
       fetch(runRequest.parameters.authorDictionaryJsonUrl).then((response) => {
         return response.json();
-      }).then((jsonData:AuthorLookupDictionary) => {
+      }).then((jsonData: AuthorLookupDictionary) => {
 
         logger.debug(`Author dictionary Json fetched successfully - parsing results...`);
 
         // Normalize whatever data source we're given to all lowercase
         const formattedAuthorDictionary = Object.entries(jsonData.twitchUserToBeatSaverProfile).reduce((dictionary, [twitchUsername, authorAliases]) => {
           return {
-            ...dictionary, 
-            [twitchUsername.trim().toLowerCase()]: authorAliases.split(',').map((alias:string) => alias.trim().toLowerCase())
+            ...dictionary,
+            [twitchUsername.trim().toLowerCase()]: authorAliases.split(',').map((alias: string) => alias.trim().toLowerCase())
           };
         }, {});
 
@@ -69,7 +69,7 @@ const script: Firebot.CustomScript<Params> = {
       });
 
     });
-    
+
   },
 
 };
