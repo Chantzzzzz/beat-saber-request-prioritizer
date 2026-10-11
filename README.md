@@ -1,8 +1,8 @@
 # Beat Saber Request Prioritizer
 
-An extension to show the folks a little love by automatically bumping their request in queue if they raid your channel and/or request a map they created.
+An extension to show your viewers a little love by automatically bumping their request to the top of your queue if they raid your channel and/or request a map they created.
 
-Note that this is using a custom mapping to associate BeatSaver profiles to Twitch usernames, since these are often different. Some people may **unintentionally** be missing from this mapping because they're new, I don't know their Twitch username, or some other reason. If you'd like to be added, either message me on discord (same username) or feel free to open up an issue on this repository.
+Note that this is using a custom mapping to associate BeatSaver profiles to Twitch usernames, since these can be different (or folks may have multiple BeatSaver profiles). Some people may **unintentionally** be missing from this mapping because they're new, I don't know their Twitch username, or some other reason. If you'd like to be added, either message me on discord (same username) or feel free to open up an issue on this repository.
 
 # !! Safety Warning !!
 
