@@ -68,8 +68,7 @@ Note: this will increase chat spam. A normal song request is two messages, and t
 
 If you need to set global variables and aren't sure how, you can follow the procedure below:
 
-![Opening the Global Variables window](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Global_1.png)
-![Setting a Persistent Global Variable](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Global_1.png)
+![Opening the Global Variables window](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Global_1.png) ![Setting a Persistent Global Variable](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Global_2.png)
 
 1. Open Streamerbot
 2. Click on `Global Variables` button in the header
