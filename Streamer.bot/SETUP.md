@@ -64,6 +64,20 @@ If left unset, the message command will be skipped.
 
 Note: this will increase chat spam. A normal song request is two messages, and the `!mtt` adds another two messages. The `!songmsg` adds yet another two on top of this. Self-requests may be rare enough that it's not a big deal, but consider leaving this setting blank if chat spam bothers you or if your chat is very busy.
 
+## Adding Persisted Global Variables
+
+If you need to set global variables and aren't sure how, you can follow the procedure below:
+
+![Opening the Global Variables window](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Global_1.png)
+![Setting a Persistent Global Variable](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Global_1.png)
+
+1. Open Streamerbot
+2. Click on `Global Variables` button in the header
+3. In the window that appears, make sure you're on the `Persisted Globals` tab
+4. Right click anywhere in the list and select `Add Variable` from the context menu
+5. In the `Variable` field, set it to the name of the variable you're defining (eg. `selfRequestMaxPerUser`), and then in `Value` set the value you want defined (eg. if you only want one self-request per stream, set it to `1`). Leave the `AutoType` toggle off.
+6. Click "OK" - it should now be in the list and be saved even after Streamerbot restarts
+
 ## Action Details
 
 ### Load Author Aliases

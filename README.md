@@ -2,7 +2,9 @@
 
 An extension to show your viewers a little love by automatically bumping their request to the top of your queue if they raid your channel and/or request a map they created.
 
-Note that this is using a custom mapping to associate BeatSaver profiles to Twitch usernames, since these can be different (or folks may have multiple BeatSaver profiles). Some people may **unintentionally** be missing from this mapping because they're new, I don't know their Twitch username, or some other reason. If you'd like to be added, either message me on discord (same username) or feel free to open up an issue on this repository.
+To prioritize self-requests correctly, this extension uses a custom mapping to associate BeatSaver profiles to Twitch usernames in cases where these are different (or for folks who have multiple BeatSaver profiles). By default, it will try to match the requester's Twitch username to the map authors.
+
+Some people may **unintentionally** be missing from this mapping because they're new, I don't know their Twitch username, or some other reason. If you'd like to be added, either message me on discord (same username) or feel free to open up an issue on this repository.
 
 # !! Safety Warning !!
 
