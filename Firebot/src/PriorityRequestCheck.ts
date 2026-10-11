@@ -20,8 +20,8 @@ type Params = {
 const script: Firebot.CustomScript<Params> = {
   getScriptManifest: () => {
     return {
-      name: "Self Request Prioritizer",
-      description: "If a map author requests their own map, bump it to the top of the queue",
+      name: "Priority Request Checker",
+      description: "Monitors your chat to automatically bump song requests from users who raid your channel or who request maps they've worked/collaboratored on.",
       author: "Chantzzzzz",
       version: "1.0",
       firebotVersion: "5",

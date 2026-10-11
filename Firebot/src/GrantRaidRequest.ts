@@ -7,8 +7,8 @@ type Params = {
 const script: Firebot.CustomScript<Params> = {
   getScriptManifest: () => {
     return {
-      name: "Initialize Author Lookup Dictionary",
-      description: "Fetch the mapping of Twitch usernames to BeatSaver author names and load them into memory",
+      name: "Grant Raid Request",
+      description: "When triggered by an Incoming Raid event, this script stores a variable to note that the user who raided you has a priority raid request.",
       author: "Chantzzzzz",
       version: "1.0",
       firebotVersion: "5",
