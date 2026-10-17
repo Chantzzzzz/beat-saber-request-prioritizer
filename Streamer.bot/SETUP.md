@@ -101,4 +101,4 @@ Triggered by any `!bsr` command in your chat. At a high level, when a song reque
 ## Action Info
 Title: `Beat Saber Request Prioritizer`
 Description: `A bot that monitors your Beat Saber queue to automatically prioritize raid requests and/or author self-requests.`
-Version: `1.0.0`
+Version: `1.0.1`
