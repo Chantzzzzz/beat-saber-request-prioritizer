@@ -1,12 +1,22 @@
 # Streamer.bot Setup
 
-Click "Import" button in Streamerbot and paste the contents of `beat-saber-request-prioritizer.bot.txt` into the window that pops up. This will add two new Actions under the "Beat Saber Request Prioritizer" Group and a new `!bsr` command to serve as an action trigger. 
+1. Copy the contents of [beat-saber-request-prioritizer.bot.txt](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Streamer.bot/beat-saber-request-prioritizer.bot.txt).
+2. Open Streamerbot and click "Import" in the header bar.
+3. Paste the file contents you copied in step 1 into the window that pops up, then click "Import" in the bottom right. It will warn you that it is importing custom C# code (see [this safety warning](https://github.com/Chantzzzzz/beat-saber-request-prioritizer/tree/main#-safety-warning-) for details). Click "Yes" to continue the import.
+4. Streamerbot will warn you that there are commands that are disabled. Click "OK" to continue.
+5. Navigate to the "Commands" tab on the left side of Streamerbot, and then find the "Beat Saber Request" command group with the `BSR` action in it. Right click on it, then click on "Enabled" to make it active. The text should turn white once enabled. See [here](#enabling-the-bsr-command) for a visual guide to performing this step.
 
-**NOTE**: In order for the action to run, you'll need to navigate to the "Commands" tab on the left sidebar and find the `BSR` command. Right click on it and make sure that "Enabled" is checked.
-
-By default, this extension will prioritize **BOTH** raid-requests and self-requests. See the configuration section if you want to disable one of these.
+This will add four new Actions under the "Beat Saber Request Prioritizer" Group and a new `!bsr` command to serve as an action trigger, as well as a utility function to decode JSON. 
 
 For basic functionality, this is all that's necessary, but further configuration is available to further tune behaviour.
+
+# Configuration Options and Recommendations
+
+**I recommend reviewing how to set up [Self-Request Limits](#limit-number-of-self-requests) and [Self-Requested Map Age](#max-age-of-self-requested-maps) at a bare minimum.**
+
+Both raid requests **AND** self-requests are prioritized by default. Also note that there is no default limit set on how many self-requests a map author will receive, nor is there a limit on how recently a map must have been published to get prioritized. See the relevant configuration options below to set those up.
+
+See [Adding Persisted Global Variables](#adding-persisted-global-variables) for help on how to set these (and other) options.
 
 ## Raid Request Configuration
 
@@ -63,6 +73,12 @@ If you want to add a note to any prioritized self-requests, set a **persisted gl
 If left unset, the message command will be skipped.
 
 Note: this will increase chat spam. A normal song request is two messages, and the `!mtt` adds another two messages. The `!songmsg` adds yet another two on top of this. Self-requests may be rare enough that it's not a big deal, but consider leaving this setting blank if chat spam bothers you or if your chat is very busy.
+
+## Enabling the BSR Command
+
+![Enabling the BSR Command](https://raw.githubusercontent.com/Chantzzzzz/beat-saber-request-prioritizer/refs/heads/main/Assets/img/Streamerbot_Enable_BSR.jpg)
+
+See the relevant folder's `SETUP.md` for bot-specific installation steps.
 
 ## Adding Persisted Global Variables
 
